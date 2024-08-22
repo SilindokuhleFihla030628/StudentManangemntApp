@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT MANANGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    
+</head>
+<body> 
+    <div>
+        <h2><em>STUDENT MANANGEMENT SYSTEM</em></h2>
+         
+       
+       <br>
+<fieldset>
+        <form id="form">
+        <label>Name:</label>
+        <input type="text" id="name">
+        <label>Surname:</label>
+        <input type="text"id="surname">  
+        <label>Marks:</label>
+        <input type="number"id="marks">
+        <button id="submit-button" onclick="addStudent()" type="button">Submit</button>
+        </form>
+      </fieldset>
+         <br>
+        
+        
+</div>
+<br>
+<div class="search-container">
+  <button id="bubblesort-button" type="button">Sort</button>
+<input  type="text" id="search" placeholder="Search" onkeyup="searchStudent()">
+</div>
+
+<fieldset>
+    <img src="bhathaflayi.jpg" alt="bhathaflayi" class="background">
+
+      <table id="studentTable">
+            <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Surname</th>
+                  <th>Marks</th>
+                  <th>Action</th> 
+             </thead>
+          </table>
+        </fieldset>
+      
+
+        <br>
+        <button id="igrafu" type="button" onclick="revealChart()">Click to see graph</button>
+        <canvas id="PieChart"style="width100%;max-width:600px"></canvas>
+        <script src="script.js"></script>
+</body>
+</html>
